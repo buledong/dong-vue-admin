@@ -1,10 +1,5 @@
 import * as fs from 'fs'
-import {
-  resolve,
-  DistClientPath,
-  middlewares,
-  StaticPath,
-} from './base.config'
+import { resolve, DistClientPath, middlewares, StaticPath } from './base.config'
 const port = 8088
 const indexProd = fs.readFileSync(
   resolve(DistClientPath + '/home/index.html'),
